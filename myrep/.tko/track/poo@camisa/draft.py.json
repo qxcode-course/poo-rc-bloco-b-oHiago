@@ -7,8 +7,18 @@
         },
         {
             "label": "2025-10-09_11-36-07",
-            "content": "class Camisa:\n    def __init__(self, tamanho: str):\n        self.__tamanho: int = \"\"\n\n    def getTamanho(self) -> str:\n        return self.__tamanho\n\n    def setTamanho(self, valor: str):\n        if not (valor == \"PP\" or valor == \"P\" or valor == \"M\" or valor == \"G\" or valor == \"GG\" or valor == \"XG\"):\n            print(\"valor invalido, tente PP, P, M, G, GG ou XG\")\n        self.__tamanho = valor\n\n    camisa = Camisa()\n\n    while roupa.getTamanho() == \"\":\n        print(\"digite seu tamanho de roupa:\")\n        tamanho = input()\n        if roupa.setTamanho(tamanho):\n            break\n        print(\"parabens, voce comprou uma roupa tamanho\", roupa.getTamanho())",
+            "content": "@@ -71,15 +71,18 @@\n anho\n- = None\n+: int = %22%22\n %0A%0A  \n",
             "lines": "20"
+        },
+        {
+            "label": "2025-10-09_11-47-26",
+            "content": "@@ -70,18 +70,20 @@\n manho = \n-%22%22\n+None\n %0A%0A    de\n@@ -361,33 +361,8 @@\n G%22)%0A\n-            return False%0A\n     \n@@ -392,29 +392,13 @@\n lor%0A\n+%0A\n     \n-    return True%0A%0A\n cami\n@@ -412,16 +412,20 @@\n misa()%0A%0A\n+    \n while ro\n@@ -576,17 +576,16 @@\n   break%0A\n-%0A\n         \n",
+            "lines": "20"
+        },
+        {
+            "label": "2025-10-09_12-05-35",
+            "content": "class Camisa:\n    def __init__(self, tamanho: str):\n        self.__tamanho = \"\"\n\n    def getTamanho(self) -> str:\n        return self.__tamanho\n\n    def setTamanho(self, valor: str):\n        if not (valor == \"PP\" or valor == \"P\" or valor == \"M\" or valor == \"G\" or valor == \"GG\" or valor == \"XG\"):\n            print(\"valor invalido, tente PP, P, M, G, GG ou XG\")\n            return False\n        self.__tamanho = valor\n        return True\n\ncamisa = Camisa()\n\nwhile roupa.getTamanho() == \"\":\n        print(\"digite seu tamanho de roupa:\")\n        tamanho = input()\n        if roupa.setTamanho(tamanho):\n            break\n\n        print(\"parabens, voce comprou uma roupa tamanho\", roupa.getTamanho())",
+            "lines": "23"
         }
     ]
 }
