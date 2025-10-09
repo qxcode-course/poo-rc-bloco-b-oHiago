@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-09_11-35-39",
+            "content": "@@ -531,19 +531,16 @@\n         \n-if \n roupa.se\n",
+            "lines": "20"
+        },
+        {
+            "label": "2025-10-09_11-36-07",
+            "content": "class Camisa:\n    def __init__(self, tamanho: str):\n        self.__tamanho: int = \"\"\n\n    def getTamanho(self) -> str:\n        return self.__tamanho\n\n    def setTamanho(self, valor: str):\n        if not (valor == \"PP\" or valor == \"P\" or valor == \"M\" or valor == \"G\" or valor == \"GG\" or valor == \"XG\"):\n            print(\"valor invalido, tente PP, P, M, G, GG ou XG\")\n        self.__tamanho = valor\n\n    camisa = Camisa()\n\n    while roupa.getTamanho() == \"\":\n        print(\"digite seu tamanho de roupa:\")\n        tamanho = input()\n        if roupa.setTamanho(tamanho):\n            break\n        print(\"parabens, voce comprou uma roupa tamanho\", roupa.getTamanho())",
+            "lines": "20"
+        }
+    ]
+}
