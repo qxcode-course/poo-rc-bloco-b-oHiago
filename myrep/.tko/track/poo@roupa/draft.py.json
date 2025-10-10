@@ -1,0 +1,144 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-09_23-40-25",
+            "content": "@@ -1,19 +1,18 @@\n class \n-Camis\n+Roup\n a:%0A    d\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-09_23-40-55",
+            "content": "@@ -770,16 +770,26 @@\n t(camisa\n+.__tamanho\n ) %0A     \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-10_10-21-12",
+            "content": "@@ -713,16 +713,17 @@\n amanho)%0A\n+%0A\n         \n@@ -764,26 +764,22 @@\n   print(\n-getTamanho\n+camisa\n ) %0A     \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-10_10-38-03",
+            "content": "@@ -648,20 +648,19 @@\n         \n-getT\n+__t\n amanho: \n@@ -695,27 +695,28 @@\n misa\n-.getTamanho(args%5B1%5D\n+ = Camisa (__tamanho\n )%0A  \n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-10_10-43-40",
+            "content": "@@ -636,16 +636,54 @@\n %22size%22:%0A\n+            getTamanho: str = args%5B1%5D%0A\n         \n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-10_10-43-56",
+            "content": "@@ -655,17 +655,17 @@\n  camisa.\n-s\n+g\n etTamanh\n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-10-10_10-44-09",
+            "content": "@@ -498,16 +498,21 @@\n     line\n+: str\n  = input\n@@ -526,16 +526,27 @@\n     args\n+: list%5Bstr%5D\n  = line.\n@@ -640,36 +640,8 @@\n e%22:%0A\n-            valor = args%5B1%5D%0A\n     \n@@ -666,21 +666,23 @@\n Tamanho(\n-valor\n+args%5B1%5D\n )%0A      \n@@ -707,16 +707,16 @@\n %22show%22:%0A\n+\n         \n@@ -735,18 +735,16 @@\n tTamanho\n-()\n ) %0A     \n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-10-10_10-50-01",
+            "content": "@@ -72,17 +72,17 @@\n     def \n-s\n+g\n etTamanh\n@@ -128,33 +128,33 @@\n amanho%0A%0A    def \n-g\n+s\n etTamanho(self, \n@@ -473,13 +473,8 @@\n a()%0A\n-    %0A\n     \n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-10-10_10-51-38",
+            "content": "@@ -72,17 +72,17 @@\n     def \n-g\n+s\n etTamanh\n@@ -128,33 +128,33 @@\n amanho%0A%0A    def \n-s\n+g\n etTamanho(self, \n@@ -540,16 +540,19 @@\n e.split(\n+%22 %22\n )%0A%0A     \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-10_10-53-48",
+            "content": "@@ -737,23 +737,16 @@\n   print(\n-camisa.\n getTaman\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-10_10-55-08",
+            "content": "@@ -189,55 +189,110 @@\n  if \n-valor not in %5B%22PP%22, %22P%22, %22M%22, %22G%22, %22GG%22,\n+not (valor== %22PP%22 or valor == %22P%22 or valor == %22M%22 or valor == %22G%22 or valor == %22GG%22 or valor ==\n  %22XG%22\n-%5D:\n+):%0A\n     \n@@ -741,17 +741,8 @@\n int(\n-%22size:%22, \n cami\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-10_11-01-28",
+            "content": "@@ -1,792 +1,53 @@\n-class Camisa:%0A    def __init__(self): %0A        self.__tamanho = %22%22   %0A%0A    def getTamanho(self) -%3E str:%0A        return self.__tamanho%0A%0A    def setTamanho(self, valor: str) -%3E bool:%0A        if valor not in %5B%22PP%22, %22P%22, %22M%22, %22G%22, %22GG%22, %22XG%22%5D:%0A            print(%22fail: valor invalido, tente PP, P, M, G, GG ou XG%22)%0A            return False%0A        self.__tamanho = valor%0A        return True%0A%0Adef main():%0A    camisa = Camisa()%0A    %0A    while True:%0A%0A        line = input()%0A        args = line.split()%0A%0A        if args%5B0%5D == %22end%22:%0A            break%0A        elif args%5B0%5D == %22size%22:%0A            valor = args%5B1%5D%0A            camisa.setTamanho(valor)%0A        elif args%5B0%5D == %22show%22:%0A            print(%22size:%22, camisa.getTamanho()) %0A        else:%0A            print(%22fail: comando n%C3%A3o encontrado%22)%0A%0Amain()\n+@@ -232,17 +232,16 @@%0A , %2522XG%2522%255D:%0A-%250A%0A         %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-10-10_11-02-10",
+            "content": "@@ -464,32 +464,8 @@\n t()%0A\n-        print(%22$%22+line)%0A\n     \n@@ -486,18 +486,16 @@\n e.split(\n-%22%22\n )%0A%0A     \n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-10-10_11-04-13",
+            "content": "@@ -509,16 +509,20 @@\n ne.split\n+(%22%22)\n %0A%0A      \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-10_11-04-29",
+            "content": "@@ -509,18 +509,16 @@\n ne.split\n-()\n %0A%0A      \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-10_11-06-06",
+            "content": "@@ -716,17 +716,16 @@\n size:%22, \n-(\n camisa.g\n@@ -736,17 +736,16 @@\n manho())\n-)\n  %0A      \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-10_11-06-38",
+            "content": "@@ -262,9 +262,9 @@\n il: \n-V\n+v\n alor\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-10_11-06-51",
+            "content": "@@ -271,9 +271,9 @@\n  inv\n-%C3%A1\n+a\n lido\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-10_11-07-13",
+            "content": "@@ -717,14 +717,12 @@\n ize:\n- ()\n %22, \n+(\n cami\n@@ -737,16 +737,17 @@\n manho())\n+)\n  %0A      \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-10_11-07-43",
+            "content": "@@ -715,16 +715,17 @@\n %22size: (\n+)\n %22, camis\n@@ -742,12 +742,8 @@\n ho()\n-,%22)%22\n ) %0A \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-10_11-08-08",
+            "content": "@@ -716,16 +716,18 @@\n size: (%22\n+, \n camisa.g\n@@ -737,16 +737,17 @@\n amanho()\n+,\n %22)%22) %0A  \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-10_11-08-31",
+            "content": "@@ -716,17 +716,16 @@\n size: (%22\n-,\n camisa.g\n@@ -735,17 +735,16 @@\n amanho()\n-,\n %22)%22) %0A  \n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-10_11-10-47",
+            "content": "@@ -734,16 +734,18 @@\n tTamanho\n+()\n ,%22)%22) %0A \n@@ -814,10 +814,8 @@\n %0A%0Amain()\n-%0A%0A\n",
+            "lines": "34"
+        },
+        {
+            "label": "2025-10-10_11-12-27",
+            "content": "@@ -713,16 +713,17 @@\n t(%22size:\n+ \n (%22,camis\n@@ -734,18 +734,16 @@\n tTamanho\n-()\n ,%22)%22) %0A \n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-10_11-13-04",
+            "content": "@@ -720,17 +720,8 @@\n :(%22,\n-lstrip(),\n cami\n@@ -740,17 +740,8 @@\n o(),\n-rstrip(),\n %22)%22)\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-10_11-15-52",
+            "content": "@@ -716,16 +716,25 @@\n size:(%22,\n+lstrip(),\n camisa.g\n@@ -749,17 +749,19 @@\n o(),\n-%22)%22,sep=%22\n+rstrip(),%22)\n %22) %0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-10_11-17-34",
+            "content": "@@ -713,17 +713,16 @@\n t(%22size:\n- \n (%22,camis\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-10-10_11-17-46",
+            "content": "class Camisa:\n    def __init__(self): \n        self.__tamanho = \"\"   \n\n    def getTamanho(self) -> str:\n        return self.__tamanho\n\n    def setTamanho(self, valor: str) -> bool:\n        if valor not in [\"PP\", \"P\", \"M\", \"G\", \"GG\", \"XG\"]:\n            print(\"fail: Valor inv\u00e1lido, tente PP, P, M, G, GG ou XG\")\n            return False\n        self.__tamanho = valor\n        return True\n\ndef main():\n    camisa = Camisa()\n    \n    while True:\n\n        line = input()\n        print(\"$\"+line)\n        args = line.split()\n\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"size\":\n            valor = args[1]\n            camisa.setTamanho(valor)\n        elif args[0] == \"show\":\n            print(\"size: (\",camisa.getTamanho(),\")\",sep=\"\") \n        else:\n            print(\"fail: comando n\u00e3o encontrado\")\n\nmain()\n\n",
+            "lines": "35"
+        }
+    ]
+}

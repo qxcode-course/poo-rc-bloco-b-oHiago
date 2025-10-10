@@ -1,5 +1,5 @@
 class Camisa:
-    def __init__(self, tamanho: str):
+    def __init__(self):
         self.__tamanho = ""
 
     def getTamanho(self) -> str:
@@ -11,13 +11,14 @@ class Camisa:
             return False
         self.__tamanho = valor
         return True
-
+    
 camisa = Camisa()
 
 while camisa.getTamanho() == "":
         print("digite seu tamanho de roupa:")
         tamanho = input()
-        if camisa.setTamanho(tamanho):
-            break
 
-        print("parabens, voce comprou uma roupa tamanho", camisa.getTamanho())
+        if camisa.setTamanho(tamanho):
+
+            print("parabens, voce comprou uma roupa tamanho", camisa.getTamanho())
+            break

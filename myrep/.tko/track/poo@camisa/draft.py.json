@@ -17,8 +17,13 @@
         },
         {
             "label": "2025-10-09_12-05-35",
-            "content": "class Camisa:\n    def __init__(self, tamanho: str):\n        self.__tamanho = \"\"\n\n    def getTamanho(self) -> str:\n        return self.__tamanho\n\n    def setTamanho(self, valor: str):\n        if not (valor == \"PP\" or valor == \"P\" or valor == \"M\" or valor == \"G\" or valor == \"GG\" or valor == \"XG\"):\n            print(\"valor invalido, tente PP, P, M, G, GG ou XG\")\n            return False\n        self.__tamanho = valor\n        return True\n\ncamisa = Camisa()\n\nwhile roupa.getTamanho() == \"\":\n        print(\"digite seu tamanho de roupa:\")\n        tamanho = input()\n        if roupa.setTamanho(tamanho):\n            break\n\n        print(\"parabens, voce comprou uma roupa tamanho\", roupa.getTamanho())",
+            "content": "@@ -178,16 +178,8 @@\n str)\n- -%3E bool\n :%0A  \n@@ -436,25 +436,8 @@\n ue%0A%0A\n-def main():%0A    %0A\n cami\n@@ -457,21 +457,20 @@\n %0A%0Awhile \n-camis\n+roup\n a.getTam\n@@ -566,21 +566,20 @@\n      if \n-camis\n+roup\n a.setTam\n@@ -670,21 +670,20 @@\n manho%22, \n-camis\n+roup\n a.getTam\n",
             "lines": "23"
+        },
+        {
+            "label": "2025-10-09_22-26-45",
+            "content": "class Camisa:\n    def __init__(self, tamanho: str):\n        self.__tamanho = \"\"\n\n    def getTamanho(self) -> str:\n        return self.__tamanho\n\n    def setTamanho(self, valor: str) -> bool:\n        if not (valor == \"PP\" or valor == \"P\" or valor == \"M\" or valor == \"G\" or valor == \"GG\" or valor == \"XG\"):\n            print(\"valor invalido, tente PP, P, M, G, GG ou XG\")\n            return False\n        self.__tamanho = valor\n        return True\n\ndef main():\n    \ncamisa = Camisa()\n\nwhile camisa.getTamanho() == \"\":\n        print(\"digite seu tamanho de roupa:\")\n        tamanho = input()\n        if camisa.setTamanho(tamanho):\n            break\n\n        print(\"parabens, voce comprou uma roupa tamanho\", camisa.getTamanho())",
+            "lines": "25"
         }
     ]
 }

@@ -8,14 +8,15 @@ sources:
 - database: poo
   link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
   cache_path: /workspaces/poo-rc-bloco-b-oHiago/myrep/.tko/cache/poo.md
-  cache_timestamp: '2025-10-09 11:19:37'
+  cache_timestamp: '2025-10-10 11:40:02'
   filters:
   - acesso
   - simples
 expanded:
 - poo@campanha-principal
 - poo@bloco_b-modificadores-de-acesso
-tasks: {}
+tasks:
+  poo@roupa: '{rate:100, alone:6}'
 flags:
   quests: 0
   tracks: 0
@@ -23,4 +24,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@camisa
+selected: poo@roupa
