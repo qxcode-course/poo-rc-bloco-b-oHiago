@@ -32,3 +32,4 @@
 2025-10-10 11:17:34, EXEC, v:1, k:poo@roupa, mode:FULL, rate:0, size:35
 2025-10-10 11:17:46, EXEC, v:1, k:poo@roupa, mode:FULL, rate:100, size:35
 2025-10-10 11:23:12, MOVE, v:1, k:poo@roupa, mode:BACK
+2025-10-10 12:20:10, MOVE, v:1, k:poo@relogio, mode:PICK
