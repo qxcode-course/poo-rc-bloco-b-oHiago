@@ -22,8 +22,13 @@
         },
         {
             "label": "2025-10-09_22-26-45",
-            "content": "class Camisa:\n    def __init__(self, tamanho: str):\n        self.__tamanho = \"\"\n\n    def getTamanho(self) -> str:\n        return self.__tamanho\n\n    def setTamanho(self, valor: str) -> bool:\n        if not (valor == \"PP\" or valor == \"P\" or valor == \"M\" or valor == \"G\" or valor == \"GG\" or valor == \"XG\"):\n            print(\"valor invalido, tente PP, P, M, G, GG ou XG\")\n            return False\n        self.__tamanho = valor\n        return True\n\ndef main():\n    \ncamisa = Camisa()\n\nwhile camisa.getTamanho() == \"\":\n        print(\"digite seu tamanho de roupa:\")\n        tamanho = input()\n        if camisa.setTamanho(tamanho):\n            break\n\n        print(\"parabens, voce comprou uma roupa tamanho\", camisa.getTamanho())",
+            "content": "@@ -28,16 +28,30 @@\n t__(self\n+, tamanho: str\n ):%0A     \n@@ -438,16 +438,29 @@\n urn True\n+%0A%0Adef main():\n %0A    %0Aca\n@@ -581,17 +581,16 @@\n input()%0A\n-%0A\n         \n@@ -620,21 +620,35 @@\n manho):%0A\n-%0A\n     \n+        break%0A%0A\n         \n@@ -717,26 +717,8 @@\n manho())\n-%0A            break\n",
             "lines": "25"
+        },
+        {
+            "label": "2025-10-12_22-51-25",
+            "content": "class Camisa:\n    def __init__(self):\n        self.__tamanho = \"\"\n\n    def getTamanho(self) -> str:\n        return self.__tamanho\n\n    def setTamanho(self, valor: str) -> bool:\n        if not (valor == \"PP\" or valor == \"P\" or valor == \"M\" or valor == \"G\" or valor == \"GG\" or valor == \"XG\"):\n            print(\"valor invalido, tente PP, P, M, G, GG ou XG\")\n            return False\n        self.__tamanho = valor\n        return True\n    \ncamisa = Camisa()\n\nwhile camisa.getTamanho() == \"\":\n        print(\"digite seu tamanho de roupa:\")\n        tamanho = input()\n\n        if camisa.setTamanho(tamanho):\n\n            print(\"parabens, voce comprou uma roupa tamanho\", camisa.getTamanho())\n            break",
+            "lines": "24"
         }
     ]
 }

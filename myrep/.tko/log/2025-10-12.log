@@ -1,0 +1,33 @@
+2025-10-12 22:50:51, SELF, v:1, k:poo@roupa, rate:100, human:sim, iagen:sim, guide:nao, other:sim, alone:8, study:180
+2025-10-12 22:50:55, MOVE, v:1, k:poo@relogio, mode:PICK
+2025-10-12 22:51:01, MOVE, v:1, k:poo@relogio, mode:BACK
+2025-10-12 22:51:20, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-12 22:51:25, EXEC, v:1, k:poo@camisa, mode:FREE, size:24
+2025-10-12 22:52:24, MOVE, v:1, k:poo@camisa, mode:BACK
+2025-10-12 22:52:25, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-12 22:52:30, MOVE, v:1, k:poo@camisa, mode:BACK
+2025-10-12 22:55:04, SELF, v:1, k:poo@camisa, rate:80, iagen:sim, guide:sim, alone:8, study:120
+2025-10-12 22:55:12, MOVE, v:1, k:poo@camisa, mode:PICK
+2025-10-12 22:55:15, MOVE, v:1, k:poo@camisa, mode:BACK
+2025-10-12 22:55:44, SELF, v:1, k:poo@camisa, rate:100, iagen:sim, guide:sim, alone:8, study:120
+2025-10-12 22:56:02, SELF, v:1, k:poo@roupa, rate:100, human:sim, iagen:sim, other:sim, alone:8, study:180
+2025-10-12 22:56:13, MOVE, v:1, k:poo@relogio, mode:PICK
+2025-10-12 22:56:16, MOVE, v:1, k:poo@relogio, mode:BACK
+2025-10-12 23:11:29, SELF, v:1, k:poo@relogio, human:sim, iagen:sim, guide:sim, other:sim, alone:8, study:240
+2025-10-12 23:11:53, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-12 23:11:56, EXEC, v:1, k:poo@chinela, mode:FREE, size:24
+2025-10-12 23:13:48, EXEC, v:1, k:poo@chinela, mode:FREE, size:24
+2025-10-12 23:18:42, EXEC, v:1, k:poo@chinela, mode:FREE, size:20
+2025-10-12 23:19:10, MOVE, v:1, k:poo@chinela, mode:BACK
+2025-10-12 23:19:10, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-12 23:19:11, MOVE, v:1, k:poo@chinela, mode:BACK
+2025-10-12 23:19:11, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-12 23:19:12, MOVE, v:1, k:poo@chinela, mode:BACK
+2025-10-12 23:19:28, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-12 23:19:33, MOVE, v:1, k:poo@chinela, mode:BACK
+2025-10-12 23:21:01, SELF, v:1, k:poo@chinela, rate:100, guide:sim, alone:9, study:90
+2025-10-12 23:21:09, MOVE, v:1, k:poo@relogio, mode:PICK
+2025-10-12 23:21:13, MOVE, v:1, k:poo@relogio, mode:BACK
+2025-10-12 23:21:24, MOVE, v:1, k:poo@relogio, mode:PICK
+2025-10-12 23:21:27, MOVE, v:1, k:poo@relogio, mode:BACK
+2025-10-12 23:22:07, SELF, v:1, k:poo@relogio, human:sim, iagen:sim, guide:sim, other:sim, alone:8, study:240

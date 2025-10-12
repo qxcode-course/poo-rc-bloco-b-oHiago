@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-12_23-11-56",
+            "content": "@@ -419,16 +419,18 @@\n ))%0A%0A    \n+if\n  chinela\n@@ -460,16 +460,21 @@\n         \n+break\n %0A%0Aprint \n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-12_23-13-48",
+            "content": "@@ -256,16 +256,17 @@\n return %0A\n+%0A\n         \n@@ -414,16 +414,18 @@\n nput())%0A\n+%0A \n     chin\n@@ -428,17 +428,17 @@\n chinela.\n-s\n+g\n etTamanh\n@@ -438,16 +438,17 @@\n tTamanho\n+ \n (tamanho\n@@ -448,16 +448,27 @@\n tamanho)\n+:%0A        %0A\n %0Aprint (\n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-10-12_23-18-42",
+            "content": "class Chinela:\n    def __init__(self):\n        self.__tamanho = 0\n\n    def getTamanho(self):\n        return self.__tamanho\n\n    def setTamanho(self, valor: int):\n        if valor > 50 or valor < 20:\n            print(\"n\u00e3o temos esse tamanho\")\n            return \n        self.__tamanho = valor\n\nchinela = Chinela()\n\nwhile chinela.getTamanho() == 0:\n    print(\"Digite seu tamanho de chinela:\")\n    tamanho = int(input())\n    chinela.setTamanho(tamanho)\nprint (\"Parabens, voce comprou uma chinela tamanho\", chinela.getTamanho())",
+            "lines": "20"
+        }
+    ]
+}
