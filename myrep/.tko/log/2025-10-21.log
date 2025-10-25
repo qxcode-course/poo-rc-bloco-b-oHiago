@@ -1,0 +1,9 @@
+2025-10-21 13:14:11, MOVE, v:1, k:poo@charger, mode:DOWN
+2025-10-21 13:31:37, SELF, v:1, k:poo@relogio, human:sim, iagen:sim, guide:sim, other:sim, alone:8, study:240
+2025-10-21 13:31:38, MOVE, v:1, k:poo@relogio, mode:PICK
+2025-10-21 13:31:39, EXEC, v:1, k:poo@relogio, mode:FULL, rate:100
+2025-10-21 13:31:41, MOVE, v:1, k:poo@relogio, mode:BACK
+2025-10-21 13:34:02, MOVE, v:1, k:poo@motoca, mode:DOWN
+2025-10-21 13:34:07, MOVE, v:1, k:poo@grafite, mode:DOWN
+2025-10-21 13:34:09, MOVE, v:1, k:poo@motouber, mode:DOWN
+2025-10-21 13:34:12, MOVE, v:1, k:poo@tamagotchi, mode:DOWN
