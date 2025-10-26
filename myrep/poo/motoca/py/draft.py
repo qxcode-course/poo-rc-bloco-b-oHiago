@@ -1,7 +1,7 @@
 class Pessoa:
     def __init__ (self, nome: str, age: int):
         self.__nome = nome
-        self.__age = 0
+        self.__age = age
     def get_nome(self):
         return self.__nome
     def get_age(self):
@@ -11,24 +11,24 @@ class Pessoa:
     def set_age(self, idade:int):
         self.__age = idade
     def __str__(self):
-        return f"{self.nome}:{self.age}"
+        return f"{self.get_nome()}:{self.get_age()}"
 
 class Moto:
-    def __init__(self):
+    def __init__(self, potencia = 1):
         self.cliente: Pessoa | None = None
-        self.potencia = 1
+        self.potencia = potencia
         self.time = 0
 
     def inserir(self, cliente: Pessoa) -> bool:
         if self.cliente != None:
-            print ("moto ocupada")
+            print ("fail: busy motorcycle")
             return False
         self.cliente = cliente
         return True 
 
     def remover(self) -> Pessoa | None:
         if self.cliente == None:
-            print("moto vazia")
+            print("fail: empty motorcycle")
             return None
         aux: Pessoa = self.cliente 
         self.cliente = None
@@ -46,12 +46,21 @@ class Moto:
         if self.cliente.get_age() > 10:
             print("fail: too old to drive")
             return
+        if time <= self.time:
+            self.time -= time
+            return
+        if time >= self.time:
+            print (f"fail: time finished after {self.time} minutes")
+            self.time = 0
+            return
+
+
         
     def honk(self):
-        print("e" * self.potencia)
+        print("P"+"e" * self.potencia+"m")
 
     def __str__(self):
-        return f"power:{self.potencia}, time:{self.time}, person:({self.cliente.nome if self.cliente != None else "empty"})"
+        return f"power:{self.potencia}, time:{self.time}, person:({self.cliente if self.cliente != None else "empty"})"
 
 def main():
     moto = Moto()
@@ -73,7 +82,9 @@ def main():
             pessoa = Pessoa(nome,age)
             moto.inserir(pessoa)
         elif args[0] == "leave":
-            moto.remover()
+            pessoa = moto.remover()
+            if pessoa:
+                print(pessoa)
         elif args[0] == "buy":
             moto.buyTime(int(args[1]))
         elif args[0] == "drive":

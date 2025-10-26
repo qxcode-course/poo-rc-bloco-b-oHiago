@@ -66,3 +66,30 @@
 2025-10-26 18:19:50, EXEC, v:1, k:poo@motoca, mode:FULL, rate:6, size:84
 2025-10-26 18:20:16, EXEC, v:1, k:poo@motoca, mode:FULL, rate:6, size:84
 2025-10-26 18:33:40, MOVE, v:1, k:poo@motoca, mode:BACK
+2025-10-26 19:04:23, MOVE, v:1, k:poo@motoca, mode:PICK
+2025-10-26 19:04:25, EXEC, v:1, k:poo@motoca, mode:FULL, rate:13, size:84
+2025-10-26 19:04:46, EXEC, v:1, k:poo@motoca, mode:FULL, rate:13, size:84
+2025-10-26 19:04:56, EXEC, v:1, k:poo@motoca, mode:FULL, rate:20, size:84
+2025-10-26 19:06:14, EXEC, v:1, k:poo@motoca, mode:FULL, rate:60, size:84
+2025-10-26 19:07:46, EXEC, v:1, k:poo@motoca, mode:FULL, rate:33, size:85
+2025-10-26 19:08:55, EXEC, v:1, k:poo@motoca, mode:FULL, rate:33
+2025-10-26 19:08:56, EXEC, v:1, k:poo@motoca, mode:FULL, rate:33
+2025-10-26 19:10:03, EXEC, v:1, k:poo@motoca, mode:FULL, rate:66, size:85
+2025-10-26 19:10:46, EXEC, v:1, k:poo@motoca, mode:FULL, rate:66, size:85
+2025-10-26 19:11:42, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0, size:86
+2025-10-26 19:11:49, EXEC, v:1, k:poo@motoca, mode:FULL, rate:0, size:86
+2025-10-26 19:11:59, EXEC, v:1, k:poo@motoca, mode:FULL, rate:80, size:86
+2025-10-26 19:20:20, EXEC, v:1, k:poo@motoca, mode:FULL, rate:80, size:89
+2025-10-26 19:20:51, MOVE, v:1, k:poo@motoca, mode:BACK
+2025-10-26 19:21:08, MOVE, v:1, k:poo@motoca, mode:PICK
+2025-10-26 19:21:11, EXEC, v:1, k:poo@motoca, mode:FULL, rate:80
+2025-10-26 19:36:17, EXEC, v:1, k:poo@motoca, mode:FULL, rate:86, size:89
+2025-10-26 19:49:44, EXEC, v:1, k:poo@motoca, mode:FULL, rate:86, size:93
+2025-10-26 19:49:56, EXEC, v:1, k:poo@motoca, mode:FULL, rate:86, size:93
+2025-10-26 19:50:09, EXEC, v:1, k:poo@motoca, mode:FULL, rate:93, size:94
+2025-10-26 19:50:19, MOVE, v:1, k:poo@motoca, mode:BACK
+2025-10-26 19:50:41, MOVE, v:1, k:poo@motoca, mode:PICK
+2025-10-26 19:50:43, EXEC, v:1, k:poo@motoca, mode:FULL, rate:93
+2025-10-26 19:51:23, EXEC, v:1, k:poo@motoca, mode:FULL, rate:100, size:94
+2025-10-26 19:52:54, EXEC, v:1, k:poo@motoca, mode:FULL, rate:100, size:95
+2025-10-26 19:53:46, MOVE, v:1, k:poo@motoca, mode:BACK
