@@ -1,0 +1,209 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-26_16-05-50",
+            "content": "@@ -44,20 +44,8 @@\n  str\n-, idade: int\n ):%0A \n@@ -83,37 +83,33 @@\n    self.__age = \n-idade\n+0\n %0A    def get_nom\n@@ -364,33 +364,19 @@\n urn \n-f%22%7B\n self.\n+__\n nome\n-%7D:%7Bself.age%7D%22\n %0A%0Acl\n@@ -908,16 +908,17 @@\n rn aux %0A\n+%0A\n     def \n",
+            "lines": "79"
+        },
+        {
+            "label": "2025-10-26_16-35-50",
+            "content": "@@ -220,16 +220,18 @@\n  def set\n+._\n _nome(se\n@@ -286,16 +286,18 @@\n  def set\n+._\n _age(sel\n",
+            "lines": "78"
+        },
+        {
+            "label": "2025-10-26_16-37-24",
+            "content": "@@ -1141,17 +1141,16 @@\n pessoa =\n-=\n  None:%0A \n",
+            "lines": "78"
+        },
+        {
+            "label": "2025-10-26_16-37-42",
+            "content": "@@ -1345,43 +1345,8 @@\n f):%0A\n-        print(%22e%22 * self.potencia)%0A\n %0A%0Ade\n",
+            "lines": "78"
+        },
+        {
+            "label": "2025-10-26_16-40-06",
+            "content": "@@ -1125,39 +1125,38 @@\n         if self.\n-cliente\n+pessoa\n  == None:%0A      \n@@ -1232,23 +1232,22 @@\n elf.\n-cliente\n+pessoa\n .get_age\n () %3E\n@@ -1242,18 +1242,16 @@\n .get_age\n-()\n  %3E 10:%0A \n@@ -1381,109 +1381,8 @@\n a)%0A%0A\n-    def __str__(self):%0A        print f%22power: %7Bself.potencia%7D:time:%7Bself.time%7D,person%7Bself.cliente%7D%22%0A\n %0Adef\n",
+            "lines": "79"
+        },
+        {
+            "label": "2025-10-26_16-43-31",
+            "content": "@@ -1418,17 +1418,16 @@\n   print \n-(\n f%22power:\n@@ -1481,17 +1481,16 @@\n liente%7D%22\n-)\n %0A%0Adef ma\n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-10-26_16-43-58",
+            "content": "@@ -1418,16 +1418,17 @@\n   print \n+(\n f%22power:\n@@ -1467,17 +1467,16 @@\n %7D,person\n-(\n %7Bself.cl\n@@ -1485,10 +1485,10 @@\n nte%7D\n-)\n %22\n+)\n %0A%0Ade\n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-10-26_16-44-54",
+            "content": "@@ -1418,17 +1418,16 @@\n   print \n-(\n f%22power:\n@@ -1466,16 +1466,17 @@\n %7D,person\n+(\n %7Bself.cl\n@@ -1481,18 +1481,18 @@\n cliente%7D\n-%22\n )\n+%22\n %0A%0Adef ma\n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-10-26_16-45-16",
+            "content": "@@ -1863,37 +1863,8 @@\n rir(\n-Pessoa(args%5B1%5D), int(args%5B1%5D)\n )%0A  \n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-10-26_16-58-27",
+            "content": "@@ -1558,17 +1558,16 @@\n = input%0A\n-%0A\n         \n@@ -1585,25 +1585,16 @@\n + line)%0A\n-        %0A\n         \n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-10-26_17-00-26",
+            "content": "@@ -1557,18 +1557,17 @@\n  = input\n-()\n+%0A\n %0A       \n@@ -1586,16 +1586,25 @@\n + line)%0A\n+        %0A\n         \n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-10-26_17-01-01",
+            "content": "@@ -1427,16 +1427,17 @@\n f%22power:\n+ \n %7Bself.po\n@@ -1544,16 +1544,21 @@\n     line\n+: str\n  = input\n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-10-26_17-01-25",
+            "content": "@@ -1442,17 +1442,17 @@\n otencia%7D\n-,\n+:\n time:%7Bse\n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-10-26_17-01-36",
+            "content": "@@ -1443,17 +1443,16 @@\n tencia%7D,\n- \n time:%7Bse\n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-10-26_17-01-47",
+            "content": "@@ -1461,17 +1461,16 @@\n f.time%7D,\n- \n person%7Bs\n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-10-26_17-01-57",
+            "content": "@@ -1408,53 +1408,8 @@\n f):%0A\n-        if self.pessoa %0A        else %22empty%22%0A\n     \n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-10-26_17-04-48",
+            "content": "@@ -1396,32 +1396,77 @@\n  __str__(self):%0A\n+        if self.pessoa %0A        else %22empty%22%0A\n         print (f\n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-10-26_17-05-03",
+            "content": "@@ -845,21 +845,20 @@\n  return \n-empty\n+None\n %0A       \n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-10-26_17-18-18",
+            "content": "@@ -845,20 +845,21 @@\n  return \n-None\n+empty\n %0A       \n@@ -1409,57 +1409,8 @@\n f):%0A\n-        pessoa.str = str(self.pessoa or %22empty%22)%0A\n     \n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-10-26_17-20-35",
+            "content": "@@ -1444,54 +1444,19 @@\n ssoa\n-)%0A        if self.pessoa %0A        else\n+ or\n  %22empty%22\n %0A   \n@@ -1451,16 +1451,17 @@\n  %22empty%22\n+)\n %0A       \n",
+            "lines": "82"
+        },
+        {
+            "label": "2025-10-26_17-20-53",
+            "content": "@@ -1465,16 +1465,25 @@\n .pessoa \n+%0A        \n else %22em\n",
+            "lines": "84"
+        },
+        {
+            "label": "2025-10-26_17-20-59",
+            "content": "@@ -1418,17 +1418,17 @@\n   pessoa\n-_\n+.\n str = st\n@@ -1441,16 +1441,24 @@\n .pessoa)\n+%0A       \n  if self\n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-10-26_17-21-29",
+            "content": "@@ -1535,26 +1535,28 @@\n  person%7B\n-pessoa_str\n+self.cliente\n %7D%22)%0A%0Adef\n",
+            "lines": "82"
+        },
+        {
+            "label": "2025-10-26_17-22-06",
+            "content": "@@ -1535,27 +1535,26 @@\n  person%7B\n-self.\n pessoa\n+_str\n %7D%22)%0A%0Adef\n",
+            "lines": "82"
+        },
+        {
+            "label": "2025-10-26_17-22-26",
+            "content": "@@ -1396,32 +1396,98 @@\n  __str__(self):%0A\n+        pessoa_str = str(self.pessoa) if self.pessoa else %22empty%22%0A\n         print (f\n",
+            "lines": "82"
+        },
+        {
+            "label": "2025-10-26_17-22-27",
+            "content": "@@ -1474,23 +1474,22 @@\n on%7Bself.\n-cliente\n+pessoa\n %7D%22)%0A%0Adef\n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-10-26_17-23-07",
+            "content": "@@ -1472,10 +1472,8 @@\n rson\n-:(\n %7Bsel\n@@ -1482,17 +1482,16 @@\n cliente%7D\n-)\n %22)%0A%0Adef \n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-10-26_17-25-19",
+            "content": "@@ -1418,16 +1418,17 @@\n   print \n+(\n f%22power:\n@@ -1486,16 +1486,17 @@\n iente%7D)%22\n+)\n %0A%0Adef ma\n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-10-26_17-43-13",
+            "content": "@@ -1412,22 +1412,21 @@\n         \n-return\n+print\n  f%22power\n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-10-26_17-43-28",
+            "content": "@@ -1412,23 +1412,23 @@\n         \n-print (\n+return \n f%22power:\n@@ -1486,17 +1486,16 @@\n iente%7D)%22\n-)\n %0A%0Adef ma\n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-10-26_17-43-51",
+            "content": "@@ -1412,23 +1412,23 @@\n         \n-return \n+print (\n f%22power:\n@@ -1486,16 +1486,17 @@\n iente%7D)%22\n+)\n %0A%0Adef ma\n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-10-26_17-49-30",
+            "content": "@@ -1475,46 +1475,8 @@\n n:(%7B\n-%22empty%22 if self.__pessoa == None else \n self\n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-10-26_17-52-25",
+            "content": "@@ -1475,62 +1475,58 @@\n n:(%7B\n-self.cliente.nome if self.cliente != None else %22empty%22\n+%22empty%22 if self.__pessoa == None else self.cliente\n %7D)%22%0A\n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-10-26_17-54-28",
+            "content": "@@ -42,18 +42,20 @@\n e: str, \n-ag\n+idad\n e: int):\n@@ -103,17 +103,21 @@\n __age = \n-0\n+idade\n %0A    def\n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-10-26_17-57-54",
+            "content": "@@ -1912,20 +1912,16 @@\n gs%5B1%5D), \n-age(\n int(args\n@@ -1925,17 +1925,16 @@\n rgs%5B1%5D))\n-)\n %0A       \n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-10-26_18-01-58",
+            "content": "@@ -1912,16 +1912,20 @@\n gs%5B1%5D), \n+age(\n int(args\n@@ -1929,10 +1929,11 @@\n rgs%5B\n-2%5D\n+1%5D)\n ))%0A \n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-10-26_18-04-55",
+            "content": "@@ -1886,118 +1886,50 @@\n     \n-nome = str(args%5B1%5D)%0A            age = int(args%5B2%5D)%0A            pessoa = Pessoa%0A            moto.inserir(pessoa\n+moto.inserir(Pessoa(args%5B1%5D), int(args%5B2%5D)\n )%0A  \n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-10-26_18-08-00",
+            "content": "@@ -1964,18 +1964,8 @@\n ssoa\n-(nome,age)\n %0A   \n",
+            "lines": "84"
+        },
+        {
+            "label": "2025-10-26_18-08-19",
+            "content": "@@ -1478,18 +1478,16 @@\n cliente.\n-__\n nome if \n",
+            "lines": "84"
+        },
+        {
+            "label": "2025-10-26_18-19-50",
+            "content": "@@ -1478,16 +1478,18 @@\n cliente.\n+__\n nome if \n",
+            "lines": "84"
+        },
+        {
+            "label": "2025-10-26_18-20-16",
+            "content": "class Pessoa:\n    def __init__ (self, nome: str, age: int):\n        self.__nome = nome\n        self.__age = 0\n    def get_nome(self):\n        return self.__nome\n    def get_age(self):\n        return self.__age\n    def set_nome(self, value: str):\n        self.__nome = value\n    def set_age(self, idade:int):\n        self.__age = idade\n    def __str__(self):\n        return f\"{self.nome}:{self.age}\"\n\nclass Moto:\n    def __init__(self):\n        self.cliente: Pessoa | None = None\n        self.potencia = 1\n        self.time = 0\n\n    def inserir(self, cliente: Pessoa) -> bool:\n        if self.cliente != None:\n            print (\"moto ocupada\")\n            return False\n        self.cliente = cliente\n        return True \n\n    def remover(self) -> Pessoa | None:\n        if self.cliente == None:\n            print(\"moto vazia\")\n            return None\n        aux: Pessoa = self.cliente \n        self.cliente = None\n        return aux \n    def buyTime(self, time: int):\n        self.time += time \n\n    def drive(self, time: int):\n        if self.time == 0:\n            print(\"fail: buy time first\")\n            return \n        if self.cliente == None:\n            print(\"fail: empty motorcycle\")\n            return\n        if self.cliente.get_age() > 10:\n            print(\"fail: too old to drive\")\n            return\n        \n    def honk(self):\n        print(\"e\" * self.potencia)\n\n    def __str__(self):\n        return f\"power:{self.potencia}, time:{self.time}, person:({self.cliente.nome if self.cliente != None else \"empty\"})\"\n\ndef main():\n    moto = Moto()\n\n    while True:\n        line = input()\n        print (\"$\" + line)\n        args:list[str] = line.split(\" \")\n\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"show\":\n            print (moto)\n        elif args[0] == \"init\":\n            moto = Moto(int(args[1]))\n        elif args[0] == \"enter\":\n            nome = str(args[1])\n            age = int(args[2])\n            pessoa = Pessoa(nome,age)\n            moto.inserir(pessoa)\n        elif args[0] == \"leave\":\n            moto.remover()\n        elif args[0] == \"buy\":\n            moto.buyTime(int(args[1]))\n        elif args[0] == \"drive\":\n            moto.drive(int(args[1]))\n        elif args[0] == \"honk\":\n            moto.honk()\n\nmain()\n",
+            "lines": "84"
+        }
+    ]
+}
