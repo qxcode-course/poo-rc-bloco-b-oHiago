@@ -1,0 +1,74 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-28_13-39-42",
+            "content": "@@ -382,16 +382,39 @@\n e = max%0A\n+    def __str__(self):%0A\n         \n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-10-28_13-42-24",
+            "content": "@@ -1213,20 +1213,16 @@\n         \n-    \n break%0A  \n",
+            "lines": "52"
+        },
+        {
+            "label": "2025-10-28_13-42-42",
+            "content": "@@ -1021,170 +1021,8 @@\n ador\n-%0A%0A    def __str__(self):%0A        status: str = self.__ligado ==  True ? %22Ligado%22 : %22Desligado%22%0A        return f%22Notebook:%7Bstatus%7D, Carregador:%7Bself.__carregador%7D%22\n %0A   \n@@ -1285,20 +1285,4 @@\n ok)%0A\n-%0Amain()        %0A\n",
+            "lines": "52"
+        },
+        {
+            "label": "2025-10-28_13-53-28",
+            "content": "@@ -1050,18 +1050,29 @@\n         \n-if\n+status: str =\n  self.__\n@@ -1090,76 +1090,21 @@\n True\n-:%0A            status == %22Ligado%22%0A        else:%0A            status ==\n+ ? %22Ligado%22 :\n  %22De\n@@ -1138,17 +1138,16 @@\n otebook:\n- \n %7Bstatus%7D\n@@ -1159,17 +1159,16 @@\n regador:\n- \n %7Bself.__\n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-10-28_13-56-02",
+            "content": "@@ -722,33 +722,8 @@\n None\n-%0A        self.status: str\n %0A%0A  \n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-10-28_13-57-11",
+            "content": "@@ -1071,33 +1071,8 @@\n f):%0A\n-        status: str = %22%22%0A\n     \n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-10-28_13-59-18",
+            "content": "@@ -1048,145 +1048,8 @@\n or%0A%0A\n-    def temCarregador(self):%0A        if self.__carregador == None:%0A            print(%22fail:sem carregador%22)%0A            return%0A        %0A%0A\n     \n@@ -1147,16 +1147,17 @@\n status =\n+=\n  %22Ligado\n@@ -1192,16 +1192,17 @@\n status =\n+=\n  %22Deslig\n",
+            "lines": "63"
+        },
+        {
+            "label": "2025-10-28_14-01-10",
+            "content": "@@ -1286,17 +1286,17 @@\n atus = %22\n-l\n+L\n igado%22%0A \n@@ -1330,17 +1330,17 @@\n atus = %22\n-d\n+D\n esligado\n@@ -1376,16 +1376,49 @@\n %7Bstatus%7D\n+, Carregador: %7Bself.__carregador%7D\n %22%0A      \n",
+            "lines": "69"
+        },
+        {
+            "label": "2025-10-28_14-01-42",
+            "content": "@@ -1174,117 +1174,8 @@\n turn\n-%0A%0A    def turn_on(self):%0A        if self.__ligado == False:%0A            print(%22fail: n%C3%A3o foi possivel ligar%22)\n %0A   \n@@ -1645,42 +1645,8 @@\n ok)%0A\n-        if args%5B0%5D == %22turn_on%22:%0A%0A\n %0Amai\n",
+            "lines": "69"
+        },
+        {
+            "label": "2025-10-28_14-04-19",
+            "content": "@@ -1787,39 +1787,8 @@\n n%22:%0A\n-            notebook.turn_on()%0A\n %0A%0Ama\n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-10-28_14-06-55",
+            "content": "@@ -1271,9 +1271,9 @@\n poss\n-%C3%AD\n+i\n vel \n",
+            "lines": "76"
+        },
+        {
+            "label": "2025-10-28_14-07-12",
+            "content": "@@ -1283,100 +1283,8 @@\n ar%22)\n-%0A%0A    def use(self):%0A        if self.__ligado == False:%0A            print(%22fail: desligado%22)\n %0A   \n@@ -1818,63 +1818,8 @@\n n()%0A\n-        if args%5B0%5D == %22use%22:%0A            notebook.use()\n %0A%0Ama\n",
+            "lines": "76"
+        },
+        {
+            "label": "2025-10-28_14-08-40",
+            "content": "@@ -1546,51 +1546,8 @@\n do%22%0A\n-%0A        if self.__carregador == None:%0A    \n     \n@@ -1591,94 +1591,10 @@\n     \n-else: %0A            return f%22Notebook: %7Bstatus%7D, Bateria %7Bself.__carregador%7D%22%0A%0A        \n+%0A%0A\n %0Adef\n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-10-28_14-23-47",
+            "content": "class Bateria:\n    def __init__(self, capacidade):\n        self.__capacidade: int = capacidade \n        self.__carga: int = capacidade \n    def get_carga(self):\n        return self.__carga\n    def get_capacidade(self):\n        return self.__capacidade\n    def set_carga(self, valor: int):\n        self.__carga = valor\n    def set_capacidade(self, max:int):\n        self.__capacidade = max\n        \nclass Carregador: \n    def __init__(self, potencia):\n        self.__potencia: int = potencia\n    def get_potencia(self):\n        return self.__potencia\n\nclass Notebook:\n    def __init__(self):\n        self.__ligado: bool = False \n        self.__bateria: Bateria | None = None\n        self.__carregador: Carregador | None = None\n        self.status: str\n\n    def get_bateria (self):\n        return self.__bateria\n\n    def get_carregador (self):\n        return self.__carregador\n\n    def set_bateria (self, bateria: Bateria):\n        self.__bateria = bateria\n\n    def set_carregador (self, carregador: Carregador):\n        self.__carregador = carregador\n\n    def temCarregador(self):\n        if self.__carregador == None:\n            print(\"fail:sem carregador\")\n            return\n\n    def turn_on(self):\n        if self.__ligado == False:\n            print(\"fail: n\u00e3o foi poss\u00edvel ligar\")\n\n    def use(self):\n        if self.__ligado == False:\n            print(\"fail: desligado\")\n        \n\n    def __str__(self):\n        status: str = \"\"\n        if self.__ligado ==  True:\n            status = \"ligado\"\n        else:\n            status = \"desligado\"\n\n        if self.__carregador == None:\n            return f\"Notebook: {status}\"\n        else: \n            return f\"Notebook: {status}, Bateria {self.__carregador}\"\n\n        \ndef main():\n    notebook = Notebook()\n\n    while True:\n\n        line = input()\n        print(\"$\" + line)\n        args:list[str] = line.split(\" \")\n\n        if args[0] == \"end\":\n            break\n        if args[0] == \"show\":\n            print(notebook)\n        if args[0] == \"turn_on\":\n            notebook.turn_on()\n        if args[0] == \"use\":\n            notebook.use()\n\nmain()        \n",
+            "lines": "84"
+        }
+    ]
+}
